@@ -6,6 +6,7 @@ from .models import ToDoList, Item
 from .forms import CreateNewList, UploadFileForm
 import pandas as pd
 from .ml import getResult
+
 # Create your views here.
 
 def index(response, id):
