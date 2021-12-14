@@ -5,6 +5,9 @@ import sys
 
 
 def main():
+    path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if path not in sys.path:
+        sys.path.append(path)
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
     try:
